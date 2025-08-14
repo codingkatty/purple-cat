@@ -1,9 +1,7 @@
 extends CharacterBody2D
 
-
 const SPEED = 350.0
 const JUMP_VELOCITY = -700.0
-
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +21,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+	if global_position.y > 1000:
+		respawn_player()
+
+func respawn_player():
+	get_tree().reload_current_scene()
+
+func collect_fosh():
+	$AnimatedSprite2D.play("rainbow")

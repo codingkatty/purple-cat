@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="purple-cat"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
+
+[global_group]
+
+player=""
 
 [input]
 
@@ -39,5 +43,6 @@ jump={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
 environment/defaults/default_clear_color=Color(0.655823, 0.864191, 0.945787, 1)
