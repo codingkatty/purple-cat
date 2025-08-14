@@ -3,6 +3,7 @@ extends Area2D
 @onready var transition = get_parent().get_node("CanvasLayer/Transition")
 
 var next_lvl
+var clct_fosh = false
 
 func _ready() -> void:
 	visible = false
@@ -20,11 +21,12 @@ func _ready() -> void:
 
 func activate():
 	visible = true
+	clct_fosh = true
 	$AnimationPlayer.play("show")
 	$AnimatedSprite2D.play("default")
 
 func _on_body_entered(body):
-	if body.is_in_group("player"):
+	if body.is_in_group("player") && clct_fosh:
 		transition.play("slide_out")
 
 func change_scene():

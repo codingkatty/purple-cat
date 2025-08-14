@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://cmo86u1s4px8g"]
+[gd_scene load_steps=49 format=4 uid="uid://j58vw57vmuh0"]
 
 [ext_resource type="Script" path="res://scripts/portal.gd" id="1_6f6uk"]
 [ext_resource type="Texture2D" uid="uid://b7ybldlivaxcm" path="res://images/portal/portal-1.png" id="2_gxwaq"]
@@ -288,7 +288,7 @@ _data = {
 [node name="Node" type="Node"]
 
 [node name="Portal" type="Area2D" parent="."]
-position = Vector2(-661, -77)
+position = Vector2(945, 387)
 script = ExtResource("1_6f6uk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Portal"]
@@ -308,7 +308,7 @@ libraries = {
 }
 
 [node name="Fisch" type="Area2D" parent="."]
-position = Vector2(809, -302)
+position = Vector2(1717, -677)
 script = ExtResource("6_wd8iw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Fisch"]
@@ -344,7 +344,7 @@ position_smoothing_speed = 7.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(0.06, 0.06)
-tile_map_data = PackedByteArray("AAAEAAAAFAADAAAAAAADAAAAFAABAAAAAAAFAAAAFAADAAAAAAD+/wEAFAABAAAAAAD//wEAFAADAAAAAAAAAAEAFAADAAAAAAABAAEAFAACAAAAAAAGAAAAFAAAAAAAAFAFAP7/FAABAAAAAAAGAP7/FAAAAAAAAAAGAP//FAADAAAAAGD7/wAAFAADAAAAAAD6/wAAFAABAAAAAAD8/wAAFAACAAAAAAA=")
+tile_map_data = PackedByteArray("AAD//wEAFAABAAAAAAAAAAEAFAADAAAAAAABAAEAFAADAAAAAAACAAEAFAACAAAAAAAFAAAAFAABAAAAAAAHAAAAFAACAAAAAAAGAAAAFAADAAAAAAAHAAQAFAABAAAAAAAIAAQAFAADAAAAAAAJAAQAFAADAAAAAAAKAAQAFAADAAAAAAALAAQAFAADAAAAAAAMAAQAFAACAAAAAAAOAAIAFAACAAAAAAANAAIAFAABAAAAAAAKAAEAFAAAAAAAADAKAAAAFAADAAAAAGAKAP//FAADAAAAAGAKAP7/FAADAAAAAGALAAEAFAACAAAAAAANAP//FAABAAAAAAAOAP//FAACAAAAAAAKAP3/FAAAAAAAAGAMAP3/FAACAAAAAAALAP3/FAADAAAAAAANAPv/FAABAAAAAAAOAPv/FAACAAAAAAA=")
 tile_set = SubResource("TileSet_j81yg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
