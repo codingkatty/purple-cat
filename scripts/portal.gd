@@ -6,6 +6,7 @@ var next_lvl
 var clct_fosh = false
 
 func _ready() -> void:
+	AudioPlayer.play_music_level()
 	visible = false
 	transition.play("slide_in")
 	body_entered.connect(_on_body_entered)
